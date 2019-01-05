@@ -1,0 +1,74 @@
+
+
+
+
+<header class="masthead">
+  <div class="" >
+    <img class="mySlides" src="img/pic_test1.png" style="width:100%">
+    <img class="mySlides" src="img/pic_test2.png" style="width:100%">
+    <img class="mySlides" src="img/pic_test3.png" style="width:100%">
+    <img class="mySlides" src="img/pic_test4.png" style="width:100%">
+  </div>
+</header> 
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2500);    
+                }
+                </script> 
+ 
+ <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" dir="rtl">
+      <div class="container">
+        <!--
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>  
+          -->
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src="./img/logos/Lifes_Secret.jpg" class="rounded-circle" alt="Cinque Terre" height="60px" width="60px">
+          </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <il>
+          <div class="login-container">
+  <button type="button" class="btn btn-default btn-lg" id="myBtn"> تسجيل الدخول  </button>
+
+          </div>
+            </il>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#services"> خدماتنا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#Recipes"> الوصفات  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#Healthy_meals_are_available"> أماكن توفر الوجبات الصحية </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#How_to_subscribe"> كيفية الاشتراك  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#team"> الفريق  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php#contact"> تواصل معنا  </a>
+            </li>
+            
+          </ul>
+
+        </div>
+      </div>
+    </nav>
